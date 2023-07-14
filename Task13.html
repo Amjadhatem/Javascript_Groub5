@@ -7,21 +7,44 @@
 </head>
 <body>
     <script>
-        function shorterString(string1, string2, string3, string4, string5) {
-        const strings = [string1, string2, string3, string4, string5];
-        let short = strings[0];
-
-        for (let i = 1; i < strings.length; i++) {
-        if (strings[i].length < short.length) {
-        short = strings[i];
-    }    
-  }
-  return short;
-}
-       
-        const result = shorterString("Amjad","Omaaaar","Maryana","Somiah","Batool");
-        document.write(`<h1>${result}</h1>`); 
-
+        function shorterString(string1 , string2 , string3 , string4 , string5){
+           var arr = [string1 , string2 , string3 , string4 , string5];
+           let short = arr[0];
+           for(let i =1 ; i<arr.length ; i++){
+            if(arr[0].length>arr[i].length){
+                short = arr[i];
+            }
+           }
+           return short;
+        }
+        let a = prompt("Enter the first string :");
+        let b = prompt("Enter the second string :");
+        let c = prompt("Enter the thaird string :");
+        let d = prompt("Enter the forth string :");
+        let e = prompt("Enter the fivth string :");
+        console.log(shorterString(a,b,c,d,e));
     </script>
 </body>
 </html>
+
+<!-- Write a function called shorterString
+that accept five string as an arguments,
+and return the first shorter string
+
+Ex: shorterString("air","school","car","by","github")
+=> by
+
+Ex: shorterString("air","tr","car","by","github")
+=> tr
+
+Ex: shorterString("by","tr","car","air","github")
+=> by
+
+Ex: shorterString("air","by","car","school","github")
+=> by
+
+Ex: shorterString("air","tr","by","car","github")
+=> by
+
+Ex: shorterString("air","tr","car","github","by")
+=> by -->

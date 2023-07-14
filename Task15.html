@@ -6,18 +6,31 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
-        function IsEven(num){
-            if((num %2) == 0 ){
-               return true ;
+        function isEven(num){
+            if((num%2)===0){
+                return true;
             }
             else{
-                return false;
+                return false
             }
         }
-        let number1 =Number(prompt("Enter a number"));
-        let a = IsEven(number1);
-        console.log("Your number is :",a);
+        let a = Number(prompt("Entre the number"));
+        console.log(isEven(a));
     </script>
+    
 </body>
 </html>
+
+
+
+<!-- Write a function called isEven
+that accept 1 argument as a number,
+and return true if this number is even
+and false if this number is odd
+
+Ex: isEven(1)
+=> false
+Ex: isEven(2)
+=> true -->
